@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
+</head>
+<body>
+    <div class="container">
+    <h2>Course Registration Form</h2>
+
+    <form onsubmit="return showMessage()">
+
+        <!-- 1 -->
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <!-- 2 -->
+        <label>Email</label>
+        <input type="email" required>
+
+        <!-- 3 -->
+        <label>Password</label>
+        <input type="password" required>
+
+        <!-- 4 -->
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <!-- 5 -->
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <!-- 6 -->
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" required> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <!-- 7 -->
+        <label>Course</label>
+        <select required>
+            <option value="">Select Course</option>
+            <option>Web Development</option>
+            <option>Graphic Designing</option>
+            <option>Digital Marketing</option>
+            <option>Mobile App Development</option>
+        </select>
+
+        <!-- 8 -->
+        <label>Qualification</label>
+        <input type="text" required>
+
+        <!-- 9 -->
+        <label>City</label>
+        <input type="text" required>
+
+        <!-- 10 -->
+        <label>Address</label>
+        <textarea rows="3" required></textarea>
+
+        <button onclick="registerUser()">Register</button>
+    </form>
+</div>
+ <script>
+    function registerUser() {
+      alert("Successfully Registered");
+    }
+  </script>
+</body>
+</html>
